@@ -99,7 +99,7 @@ exports.verifyEmail = async (event, context) => {
       await mg.messages().send(data);
       console.log('Verification email sent successfully.');
 
-      const user = await User.findOne({ where: { uuid:  userId} });
+      const user = await User.findOne({ where: { uid:  userId} });
       await user.update({ expirationTime: expiryTime });
 
       console.log('Verification email details saved successfully.');
