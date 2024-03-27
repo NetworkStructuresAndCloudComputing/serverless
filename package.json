@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mailgun-js": "^0.22.0",
+    "mysql2": "^3.9.2",
+    "sequelize": "^6.37.1"
+  },
+  "name": "forkerrepo_serverless",
+  "description": "",
+  "version": "1.0.0",
+  "main": "emailVerification.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
