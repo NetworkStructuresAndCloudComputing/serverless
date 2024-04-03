@@ -81,7 +81,7 @@ exports.verifyEmail = async (event, context) => {
     const email = payload.email;
     const userId = payload.userId;
     const expiryTime = new Date(Date.now() + 2 * 60 * 1000); // Set expiration time for 2 minutes
-    const verificationLink = `http://cloudcomputingzakirmemon.me:3000/v1/user/verify_user/${userId}`;
+    const verificationLink = `https://cloudcomputingzakirmemon.me/v1/user/verify_user/${userId}`;
 
     try {
       const data = {
